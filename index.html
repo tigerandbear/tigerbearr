@@ -1,0 +1,453 @@
+<html><head><base href="index.html"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Christian Resource Library - Find Your Faith, Find Your Community</title><meta name="description" content="The Christian Resource Library: a place to discover books, DVDs, community, and support for your spiritual journey."><meta name="author" content="Christian Resource Library"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link href="https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"><style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+    .header {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('gallery/pexels-wb2008-2541239.jpg') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+    .navbar-brand {
+        font-family: 'Droid Sans', sans-serif;
+        font-weight: 700;
+        color: #2c3e50;
+    }
+    .nav-link {
+        color: #34495e;
+        transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+        color: #e74c3c;
+    }
+    .btn-hero {
+        background-color: #e74c3c;
+        border: none;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+    }
+    .btn-hero:hover {
+        background-color: #c0392b;
+    }
+    .section-heading {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .section-heading h2 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+    .section-heading h3 {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+    }
+    .service-box {
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 30px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+    .service-box:hover {
+        transform: translateY(-10px);
+    }
+    .service-box i {
+        font-size: 3rem;
+        color: #e74c3c;
+        margin-bottom: 20px;
+    }
+    .gallery-item {
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+    .gallery-item img {
+        width: 100%;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+        transform: scale(1.05);
+    }
+    .gallery-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+    .gallery-item:hover .gallery-caption {
+        transform: translateY(0);
+    }
+    .testimonial {
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .testimonial img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        border: 3px solid #e74c3c;
+    }
+    .footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 50px 0;
+    }
+    .footer h4 {
+        color: #3498db;
+        margin-bottom: 20px;
+    }
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+    .footer-links a {
+        color: #ecf0f1;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .footer-links a:hover {
+        color: #3498db;
+    }
+    .social-icons {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .social-icons a {
+        color: #ecf0f1;
+        margin-right: 15px;
+        transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+        color: #e74c3c;
+    }
+    .footer-bottom {
+        background-color: #1a252f;
+        color: #7f8c8d;
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+    .upcoming-events {
+        background-color: #ecf0f1;
+        padding: 50px 0;
+    }
+    .event-card {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .event-date {
+        font-size: 1.2rem;
+        color: #e74c3c;
+        font-weight: bold;
+    }
+    .featured-resource {
+        background-color: #3498db;
+        color: #fff;
+        padding: 50px 0;
+    }
+    .featured-resource img {
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+</style></head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tiger Bear Express and Rescue</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="abouus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Our Rescues</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Happy Tails</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured">Volunteer Spotlight</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contactus.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donation.html">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="header">
+        <h1 class="display-3 mb-4">Tiger Bear Express and Rescue</h1>
+        <h2 class="display-6 mb-5">Giving Animals a Second Chance</h2>
+        <a href="#about" class="btn btn-hero btn-lg">Learn More</a>
+        <p class="mt-4 small">Tiger Bear Express and Rescue - EIN: 83-2332488</p>
+    </header>
+
+    <main>
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>About Tiger Bear Express and Rescue</h2>
+                    <h3>Our mission is to rescue, rehabilitate, and re-home animals in need.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <p>Tiger Bear Express and Rescue is dedicated to providing compassionate care for abandoned and neglected animals. We strive to give each animal a second chance at a happy and healthy life through rescue, rehabilitation, and adoption.  We believe every animal deserves love, and we work tirelessly to find the perfect forever home for each one.</p>
+                        <p>Your support is vital to our mission. Whether you donate, volunteer, or adopt, you become part of our  community dedicated to making a difference in the lives of animals. Thank you for helping us give them the second chance they deserve!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-5 bg-light">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>What We Do</h2>
+                    <h3>We offer a range of services to support animals and the community.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <i class="fas fa-paw"></i>
+                            <h3>Animal Rescue</h3>
+                            <p>We rescue animals from shelters, streets, and other challenging situations.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <i class="fas fa-home"></i>
+                            <h3>Adoption Services</h3>
+                            <p>We carefully match rescued animals with loving families and forever homes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <i class="fas fa-medkit"></i>
+                            <h3>Medical Care</h3>
+                            <p>We provide necessary medical care, including vaccinations and spay/neuter services.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <h3>Foster Care</h3>
+                            <p>Temporary homes provide a nurturing environment while animals await adoption.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <i class="fas fa-donate"></i>
+                            <h3>Donations</h3>
+                            <p>Your generous donations help us provide essential care and services.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <i class="fas fa-hands-helping"></i>
+                            <h3>Volunteer Opportunities</h3>
+                            <p>Join our team and make a direct impact on the lives of animals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-5">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our Rescues</h2>
+                    <h3>Meet some of the adorable animals we've helped.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 gallery-item">
+                        <img src="gallery/horses_52500.jpg" alt="A rescued dog" class="img-fluid">
+                        <div class="gallery-caption">
+                            <h4>Buddy</h4>
+                            <p>A playful pup waiting for his forever home.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery-item">
+                        <img src="gallery/dogs_160846.jpg" alt="A rescued cat" class="img-fluid">
+                        <div class="gallery-caption">
+                            <h4>Whiskers</h4>
+                            <p>A cuddly cat looking for a loving family.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 gallery-item">
+                        <img src="gallery/horses_53114.jpg" alt="A rescued rabbit" class="img-fluid">
+                        <div class="gallery-caption">
+                            <h4>Cottontail</h4>
+                            <p>A sweet rabbit ready to hop into your heart.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-5 bg-light">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Happy Tails</h2>
+                    <h3>Hear from families who have adopted from us.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <img src="gallery/image_71.jpg" alt="Sarah M." class="img-fluid mx-auto d-block">
+                            <p>"Adopting Luna from Tiger Bear Express was the best decision we ever made. She's brought so much joy into our lives."</p>
+                            <p class="font-weight-bold">- Sarah M.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <img src="gallery/image_79.jpg" alt="Mark T." class="img-fluid mx-auto d-block">
+                            <p>"The team at Tiger Bear Express was so helpful throughout the adoption process. We're so grateful for their dedication."</p>
+                            <p class="font-weight-bold">- Mark T.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial">
+                            <img src="gallery/image_80.jpg" alt="Emily K." class="img-fluid mx-auto d-block">
+                            <p>"We were so impressed by the care and compassion shown to the animals at Tiger Bear Express.  They truly care about finding the right home for each animal." </p>
+                            <p class="font-weight-bold">- Emily K.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="upcoming-events">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Upcoming Events</h2>
+                    <h3>Join us for these fun and impactful events.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <h4>Adoption Day</h4>
+                            <p class="event-date">Saturday, October 28th, 10:00 AM - 2:00 PM</p>
+                            <p>Meet our adoptable animals and find your new best friend!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <h4>Fundraising Bake Sale</h4>
+                            <p class="event-date">Sunday, November 19th, 11:00 AM - 3:00 PM</p>
+                            <p>Enjoy delicious treats and support our rescue efforts.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="event-card">
+                            <h4>Volunteer Orientation</h4>
+                            <p class="event-date">Tuesday, December 5th, 6:00 PM - 7:00 PM</p>
+                           <p>Learn how to become a volunteer and make a difference. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured-resource">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2>Volunteer Spotlight</h2>
+                        <h3>Meet Amanda, Our Dedicated Foster Mom</h3>
+                        <p>Amanda has been a valuable foster parent for Tiger Bear Express, providing loving temporary homes for numerous animals. Her dedication and compassion have made a significant impact on the lives of many rescued pets.</p>
+                       <a href="Contactus.html" class="btn btn-light">Become a Foster Parent - Contact Us</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="gallery/pexels-ann-h-45017-1765033.jpg" alt="Volunteer of the month" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>Tiger Bear Express and Rescue is dedicated to rescuing, rehabilitating, and re-homing animals in need. We are driven by compassion and the belief that all animals deserve love.</p>
+                    <div class="social-icons">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="abouus.html">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="Contactus.html">Contact Us</a></li>
+                        <li><a href="donation.html">Donations</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Tiger Bear Express and Rescue<br>
+                    7023 Kivette House Rd Gibsonville, NC 27249 United States</p>
+                    <p>Email: tigerbearexpressandrescue@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container text-center">
+            <p>© 2024 Tiger Bear Express and Rescue. All rights reserved. EIN: 83-2332488</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>

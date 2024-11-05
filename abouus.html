@@ -1,0 +1,355 @@
+<html><head><base href="index.html"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About Us - Christian Resource Library</title><meta name="description" content="Learn about the Christian Resource Library, our mission, values, and the dedicated team serving our community."><meta name="author" content="Christian Resource Library"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link href="https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"><style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+    .navbar-brand {
+        font-family: 'Droid Sans', sans-serif;
+        font-weight: 700;
+        color: #2c3e50;
+    }
+    .nav-link {
+        color: #34495e;
+        transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+        color: #e74c3c;
+    }
+    .about-header {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('*') no-repeat center center/cover;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+    .section-heading {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .section-heading h2 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+    .section-heading h3 {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+    }
+    .about-content {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+    }
+    .about-section {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .team-member {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+    .timeline {
+        position: relative;
+        padding: 0;
+        list-style: none;
+    }
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        width: 2px;
+        margin-left: -1.5px;
+        background-color: #e9ecef;
+    }
+    .timeline > li {
+        position: relative;
+        margin-bottom: 50px;
+        min-height: 50px;
+    }
+    .timeline > li:before,
+    .timeline > li:after {
+        content: " ";
+        display: table;
+    }
+    .timeline > li:after {
+        clear: both;
+    }
+    .timeline > li .timeline-panel {
+        float: right;
+        position: relative;
+        width: 100%;
+        padding: 0 20px 0 100px;
+        text-align: left;
+    }
+    .timeline > li .timeline-image {
+        left: 0;
+        margin-left: 0;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        z-index: 100;
+        background-color: #e74c3c;
+        color: #fff;
+        border-radius: 100%;
+        border: 7px solid #f1f1f1;
+        text-align: center;
+    }
+    .timeline > li .timeline-image h4 {
+        font-size: 10px;
+        margin-top: 12px;
+        line-height: 14px;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel {
+        float: right;
+        text-align: left;
+        padding: 0 20px 0 100px;
+    }
+    .footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 50px 0;
+    }
+    .footer h4 {
+        color: #3498db;
+        margin-bottom: 20px;
+    }
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+    .footer-links a {
+        color: #ecf0f1;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .footer-links a:hover {
+        color: #3498db;
+    }
+    .social-icons {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .social-icons a {
+        color: #ecf0f1;
+        margin-right: 15px;
+        transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+        color: #e74c3c;
+    }
+    .footer-bottom {
+        background-color: #1a252f;
+        color: #7f8c8d;
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+</style></head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tiger Bear Express and Rescue</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Our Rescues</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Happy Tails</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#featured">Volunteer Spotlight</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contactus.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donation.html">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="about-header">
+        <h1 class="display-4">About Us</h1>
+        <p class="lead">Learn about our mission, our team, and how we're making a difference for animals.</p>
+    </header>
+
+    <main class="about-content">
+        <div class="container">
+            <section class="about-section">
+                <div class="section-heading">
+                    <h2>Our Mission</h2>
+                    <h3>Giving Animals a Second Chance</h3>
+                </div>
+                <p>At Tiger Bear Express and Rescue, our mission is to rescue, rehabilitate, and re-home abandoned, neglected, and abused animals. We are dedicated to providing compassionate care and finding loving forever homes for every animal that comes into our care. We believe every animal deserves a second chance at happiness, and we work tirelessly to make that a reality.</p>
+            </section>
+
+            <section class="about-section">
+                <div class="section-heading">
+                    <h2>Our Vision</h2>
+                    <h3>A Community Where Every Animal is Loved and Cherished</h3>
+                </div>
+                <p>We envision a community where every animal is treated with kindness, respect, and compassion. Our goal is to create a world where no animal suffers from neglect or abuse and where every pet has a safe, loving home. We strive to be a leading voice for animal welfare and to inspire others to join us in our mission.</p>
+            </section>
+
+            <section class="about-section">
+                <div class="section-heading">
+                    <h2>Our Values</h2>
+                    <h3>The Principles That Guide Our Work</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4><i class="fas fa-paw"></i> Compassion</h4>
+                        <p>We approach every animal with kindness, understanding, and empathy, recognizing their inherent worth and need for love.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4><i class="fas fa-hands-helping"></i> Community</h4>
+                        <p>We believe in the power of community involvement and collaboration to achieve our goals and make a greater impact on animal welfare.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4><i class="fas fa-heart"></i> Dedication</h4>
+                        <p>We are unwavering in our commitment to providing the highest quality of care for every animal and finding them the perfect forever home.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <div class="section-heading">
+                    <h2>Our Team</h2>
+                    <h3>The Passionate People Behind Tiger Bear Express</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 team-member">
+                        <img src="tgallery/image_81.jpg" alt="Patsy C. Bartis - Founder/Director">
+                        <h4>Patsy C. Bartis</h4>
+                        <p>Founder/Director</p>
+                    </div>
+                    <div class="col-md-4 team-member">
+                        <img src="gallery/image_82.jpg" alt="Amelia S. - Volunteer Coordinator">
+                        <h4>Amelia S.</h4>
+                        <p>Volunteer Coordinator</p>
+                    </div>
+                    <div class="col-md-4 team-member">
+                        <img src="gallery/image_83.jpg" alt="Dr. Robert M. - Veterinarian">
+                        <h4>Dr. Robert M.</h4>
+                        <p>Veterinarian</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <div class="section-heading">
+                    <h2>Our History</h2>
+                    <h3>A Timeline of Growth and Impact</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <h4>2018</h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Founded with a Passion</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Tiger Bear Express and Rescue was founded by Patsy C. Bartis with a vision to help animals in need.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>2020</h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Expanding Our Reach</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>We expanded our foster network and began partnering with local shelters.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <h4>2022</h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Reaching Milestones</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>We celebrated placing over 500 animals in loving homes.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Today</h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Continuing Our Mission</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>We continue to rescue, rehabilitate, and re-home animals, making a lasting impact on their lives and the community.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>Tiger Bear Express and Rescue is dedicated to giving animals a second chance. We rescue, rehabilitate, and re-home animals in need.</p>
+                    <div class="social-icons">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Our Services</a></li>
+                        <li><a href="Contactus.html">Contact Us</a></li>
+                        <li><a href="donation.html">Donations</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Tiger Bear Express and Rescue<br>
+                    7023 Kivette House Rd<br>
+                    Gibsonville, NC 27249, USA</p>
+                    <p>Email: tigerbearexpressandrescue@gmail.com</p>
+                    <p>Phone: (336) 555-1212 </p> <p>(Example Number)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body></html>
